@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enhanced Form Assignment</title>
+</head>
+<body>
+
+    <header>
+        <h1>HTML5 Assignment: Content & Forms</h1>
+    </header>
+
+    <main>
+        <section>
+            <h2>My Favorite Things</h2>
+            <h3>A List of Hobbies</h3>
+            <ul>
+                <li>Reading science fiction</li>
+                <li>Playing the guitar</li>
+                <li>Hiking in nature</li>
+            </ul>
+
+            <h3>Monthly Expenses</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Category</th>
+                        <th>Amount</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Rent</td>
+                        <td>$1500</td>
+                    </tr>
+                    <tr>
+                        <td>Groceries</td>
+                        <td>$450</td>
+                    </tr>
+                    <tr>
+                        <td>Utilities</td>
+                        <td>$150</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>A Video About Space</h3>
+            <video width="600" controls>
+                <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </section>
+
+        <hr>
+
+        <section>
+            <h2>User Profile Form</h2>
+            <form action="#" method="post">
+                <fieldset>
+                    <legend>Personal Information</legend>
+                    
+                    <div>
+                        <label for="fullName">Full Name:</label>
+                        <input type="text" id="fullName" name="fullName" placeholder="John Doe" required autocomplete="name">
+                    </div>
+                    
+                    <div>
+                        <label for="userEmail">Email Address:</label>
+                        <input type="email" id="userEmail" name="userEmail" placeholder="john.doe@example.com" required autocomplete="email">
+                    </div>
+
+                    <div>
+                        <label for="userPassword">Create Password:</label>
+                        <input type="password" id="userPassword" name="userPassword" minlength="8" required>
+                    </div>
+
+                    <div>
+                        <label for="phoneNumber">Phone Number:</label>
+                        <input type="tel" id="phoneNumber" name="phoneNumber" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" title="Format: 123-456-7890" required>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Additional Details</legend>
+
+                    <div>
+                        <label for="birthDate">Date of Birth:</label>
+                        <input type="date" id="birthDate" name="birthDate">
+                    </div>
+
+                    <div>
+                        <label for="country">Country:</label>
+                        <input type="text" id="country" name="country" value="United States" readonly>
+                    </div>
+                </fieldset>
+                
+                <button type="submit">Submit Profile</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>This is a sample assignment submission.</p>
+    </footer>
+
+</body>
+</html>
